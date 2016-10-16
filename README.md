@@ -4,11 +4,16 @@ The mathematical nature of music, that is each song can be characterized by some
 
 ### Prediction 
 run the following commands in order:
-cd code
-ipython
-run load_map.py # load the matrix, clustering table and datasets
-run -i counting.py # calculate PMI
-run -i predicting.py # use different configuration to run the prediction algorithm
+
+*cd code*
+
+*ipython*
+
+*run load_map.py # load the matrix, clustering table and datasets*
+
+*run -i counting.py # calculate PMI*
+
+*run -i predicting.py # use different configuration to run the prediction algorithm*
 
 You can adjust the following parameters in predicting.py
 voters = 20
@@ -16,7 +21,7 @@ beam = 5
 recommendations = 20
 clusteringmode = False
 
-The result of different beams with clusteringmode = True/False is in result.txt
+The result of different beams with clusteringmode = True/False is in *result.txt*
 
 All the accuracy and efficiency plots are based on these data.
 
@@ -28,15 +33,19 @@ The clustering distribution plot is based on this dict and the code in testing.p
 
 It’s cool if you wan to run the clustering algorithm use the following commands:
 
-   mcl/bin/mcxload -abc data.abc --stream-mirror -write-tab data.tab -o data.mci  
+*mcl/bin/mcxload -abc data.abc --stream-mirror -write-tab data.tab -o data.mci*
 
-   mcl/bin/mcl data.mci -I 1.4
-   mcl/bin/mcl data.mci -I 2
-   mcl/bin/mcl data.mci -I 4
+*mcl/bin/mcl data.mci -I 1.4*
 
-   mcl/bin/mcxdump -icl out.data.mci.I14 -tabr data.tab -o dump.data.mci.I14
-   mcl/bin/mcxdump -icl out.data.mci.I20 -tabr data.tab -o dump.data.mci.I20
-   mcl/bin/mcxdump -icl out.data.mci.I40 -tabr data.tab -o dump.data.mci.I40
+*mcl/bin/mcl data.mci -I 2*
+
+*mcl/bin/mcl data.mci -I 4*
+
+*mcl/bin/mcxdump -icl out.data.mci.I14 -tabr data.tab -o dump.data.mci.I14*
+
+*mcl/bin/mcxdump -icl out.data.mci.I20 -tabr data.tab -o dump.data.mci.I20*
+
+*mcl/bin/mcxdump -icl out.data.mci.I40 -tabr data.tab -o dump.data.mci.I40*
 
 For more, http://micans.org/mcl/
 
