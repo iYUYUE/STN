@@ -1,0 +1,59 @@
+with clustering data:
+
+beam = 1
+voters = 20
+accuracy = 12306/16872	0.7294
+time = 217.24760294
+
+beam = 2
+voters = 20
+accuracy = 11349/17398	0.6523
+time = 226.134768009
+
+beam = 3
+voters = 20
+accuracy = 10942/17502	0.6252
+time = 220.969942093
+
+beam = 4
+voters = 20
+accuracy = 10769/17567	0.6130
+time = 223.7138381
+
+beam = 5
+voters = 20
+accuracy = 10667/17604	0.6059
+time = 227.855687141
+
+217.24760294, 226.134768009, 220.969942093, 223.7138381, 227.855687141
+
+without clustering data:
+
+beam = 1
+voters = 20
+accuracy = 11262/16701	0.6743
+time = 739.44305706
+
+beam = 2
+voters = 20
+accuracy = 10341/17403	0.5942
+time = 767.374724865
+
+beam = 3
+voters = 20
+accuracy = 9784/17551
+time = 750.007590055
+
+beam = 4
+voters = 20
+accuracy = 9623/17652
+time = 784.868348122
+
+beam = 5
+voters = 20
+accuracy = 9686/17736
+time = 733.208697081
+
+
+739.44305706, 767.374724865, 750.007590055, 784.868348122, 733.208697081
+
